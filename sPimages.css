@@ -1,0 +1,29 @@
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  height: auto;
+}
+.column2 {
+  float: left;
+  padding: 5px;
+  width: 33.33%;
+}
+.column3 {
+  float: left;
+  padding: 5px;
+  width: 33.33%;
+}
+
+.column img {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

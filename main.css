@@ -1,22 +1,23 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(43, 41, 41);
+}
+* {
+  box-sizing: border-box;
+}
 
 .bg-img {
-
-  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("background.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("spices-black-background-space-text\(1\)-min\(1\).jpg");
   width: 100%;
   min-height: 700px;
-  
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 50%;
 }
-
-
-
- 
 
 .container {
   position: absolute;
@@ -28,7 +29,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   overflow: hidden;
   background-color: #333;
 }
-
 
 .topnav a {
   float: left;
@@ -44,7 +44,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: black;
 }
 
-
 .sidebar {
   height: 100%;
   width: 0;
@@ -52,7 +51,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   z-index: 1;
   top: 8px;
   left: 0;
-  background-color:rgb(195, 199, 206);
+  background-color: rgb(58, 58, 55);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -62,13 +61,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color:rgb(82, 80, 80);
+  color: rgb(240, 233, 233);
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: rgb(247, 223, 10);
 }
 
 .sidebar .closebtn {
@@ -82,10 +81,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  
+
   color: rgb(7, 7, 7);
   padding: 10px 15px;
   border: none;
+  transition: 0.3s;
 }
 
 .openbtn:hover {
@@ -93,18 +93,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
-
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
-
-
-
 
 .hero-text {
   text-align: left;
@@ -112,7 +112,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(247, 223, 10);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .hero-text button {
@@ -121,22 +122,61 @@ body {font-family: Arial, Helvetica, sans-serif;}
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color: #ddd;
+  background-color: rgb(250, 234, 12);
   text-align: left;
   cursor: pointer;
+  transition: 0.6s;
 }
 
 .hero-text button:hover {
-  background-color: #555;
+  background-color: rgb(7, 7, 1);
   color: white;
+}
+.hero-text button {
+  border-radius: 20px;
 }
 
 
 
+.images::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.h3 {
+  color: #f1d21f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.h3 {
+  font-size: 30px;
+  line-height: 1.304347826086957em;
+}
+.images{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation : slideBg 8s linear infinite;
+  animation-timing-function: ease-in-out;
+  background-image: url('');
+
+}
+@keyframes slideBg{
+  0%{
+    background-image:url('wall.jpe');
+  }
+  25% {
+    background-image:url('preparing-raw-barbeque-chicken-cooking.jp');
+
+  }
+}
 
 
 
-
-
-
-/*pop*/
+}
