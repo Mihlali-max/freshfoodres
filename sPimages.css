@@ -16,7 +16,7 @@
 }
 
 .column img {
-  animation: rotate 8s linear infinite;
+  animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {

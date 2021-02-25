@@ -9,12 +9,18 @@
   </head>
 
   <body>
+    <div class="menu-image"></div>
+
+    <div class="bg-text">
+      <h1 style="font-size: 50px">Table booking</h1>
+    </div>
+
     <script src="bookform.js"></script>
-    <form action=" http://127.0.0.1:5000/add/" method="POST">
+    <form action="http://127.0.0.1:5000/add/" method="POST">
       <div class="bg"></div>
 
       <div class="details">
-        <label for="name">Full name</label>
+        <label for="name">Fullname</label>
         <input
           type="text"
           id="name"
@@ -25,7 +31,7 @@
         />
       </div>
       <div class="details">
-        <label for="email">Your E-mail</label>
+        <label for="email">Email-Adress</label>
         <input
           type="email"
           id="email"
@@ -35,7 +41,7 @@
         />
       </div>
       <div class="details">
-        <label for="phone">Your Phone</label>
+        <label for="phone">Phone number</label>
         <input
           type="tel"
           id="phone"
@@ -77,17 +83,19 @@
         <input type="date" id="checkout-date" name="checkout" required />
       </div>
       <div class="details">
-        <label for="room-selection">Select Room Preference</label>
+        <label for="room-selection">What's your dish ?</label>
         <select id="room-selection" name="dish" required>
           <option value="">Choose a Room from the List</option>
-          <option value="connecting">Connecting</option>
-          <option value="adjoining">Adjoining</option>
-          <option value="adjacent">Adjacent</option>
+          <option>Breakfast menu</option>
+          <option>Desserts</option>
+          <option>Burger menu</option>
+          <option>Snack Boards</option>
+          <option>Trammezzini</option>
         </select>
       </div>
       <hr />
       <div class="details">
-        <label for="message">Anything Else?</label>
+        <label for="message">Anything you want to ask?</label>
         <textarea
           id="message"
           name="text"
@@ -95,7 +103,7 @@
           required
         ></textarea>
       </div>
-      <button type="submit">Make your reservation</button>
+      <button type="submit">request reservation</button>
     </form>
   </body>
 </html>
