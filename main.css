@@ -136,8 +136,6 @@ body {
   border-radius: 20px;
 }
 
-
-
 .images::after {
   content: "";
   clear: both;
@@ -157,26 +155,56 @@ body {
   font-size: 30px;
   line-height: 1.304347826086957em;
 }
-.images{
+.images {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation : slideBg 8s linear infinite;
+  animation: slideBg 8s linear infinite;
   animation-timing-function: ease-in-out;
-  background-image: url('');
-
+  background-image: url("");
 }
-@keyframes slideBg{
-  0%{
-    background-image:url('wall.jpe');
-  }
-  25% {
-    background-image:url('preparing-raw-barbeque-chicken-cooking.jp');
-
-  }
+.button {
+  position: absolute;
+  background-color: #0c0e0c;
+  border: none;
+  font-size: 28px;
+  color: #e7be06;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  left: 45%;
+  top: 86%;
 }
 
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
 
-
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.back-ground {
+  background-image: url("back.jpeg");
+  width: 100%;
+  height: auto;
+  background-repeat: unset;
+  top: 10%;
 }
