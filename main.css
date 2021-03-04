@@ -242,7 +242,7 @@ hr:after {
   width: auto;
   padding: 19px 95px;
 }
-.button:hover {
+.button1:hover {
   background-color: #f7f7ef;
 }
 @media all and (max-width: 30em) {
@@ -254,6 +254,9 @@ hr:after {
 
 * {
   box-sizing: border-box;
+
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 .imageColumn1 {
   float: left;
@@ -261,9 +264,6 @@ hr:after {
   padding: 10px;
 }
 
-img.imageColumn1 {
-  border-radius: 20px;
-}
 .imageColumn1 {
   transition: 0.6s all ease-in-out;
 }
@@ -300,14 +300,14 @@ img.imageColumn1 {
 }
 
 h5 {
-  color: #f3f307;
+  color: #f1d21f;
   font-size: 50px;
   text-align: center;
 }
 
 .title-underline {
   padding: 20px 134px;
-  color: #e7e405;
+  color: #f1d21f;
   height: 21px;
 }
 .title-underline span {
@@ -331,4 +331,81 @@ h5 {
 .title-underline span:after {
   left: auto;
   right: -9px;
+}
+.alignRow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.header {
+  padding: 9px;
+  text-align: center;
+  background: rgb(7, 7, 7);
+  color: #f1d21f;
+  font-size: 32px;
+  border-radius: 20px;
+}
+
+.float-layout {
+  padding: 1px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card-container {
+  overflow: hidden;
+}
+
+.card {
+  --bg-overlay-color: rgb(0, 0, 0);
+  vertical-align: baseline;
+  background: transparent;
+
+  color: rgb(238, 230, 230);
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 50%;
+  float: right;
+  background: transparent;
+}
+
+.card-title {
+  font-size: 30px;
+  color: #f1d21f;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  font-family: Georgia, Arial, Helvetica, sans-serif, Times, serif;
+  background: transparent;
+}
+
+.card-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.card-image {
+  display: flex;
+}
+
+div.card-image img {
+  width: 50%;
+  height: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-image {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
 }
