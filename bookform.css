@@ -19,21 +19,21 @@ div.details.inlined {
 label {
   display: block;
   padding-bottom: 6px;
-  font-size: 1.25em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: -1.75em;
+  font-family: "Raleway", sans-serif;
 }
 
 input,
 select,
 textarea {
-  border-radius: 2px;
-  border: 2px solid #777;
+  border-radius: 40px;
+  border: 2px solid #f2bebe;
   box-sizing: border-box;
-  font-size: 1.25em;
-  font-family: "Nanum Gothic";
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
   width: 100%;
   padding: 10px;
+  background-color: #4e5153;
 }
 
 div.details.inlined input {
@@ -51,13 +51,12 @@ hr {
 
 button {
   height: 50px;
-  background: rgb(17, 17, 17);
+  background: rgb(70, 69, 81);
   border: none;
   color: white;
   font-size: 1.25em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 22px;
   cursor: pointer;
 }
 

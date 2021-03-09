@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="sPimages.css">
   <link rel="styleesheet" href="menubutt.css">
   <link rel="styleesheet" href="preloader.css">
+   
 </head>
 
 <body class="back-ground">
@@ -19,9 +20,9 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="#">About</a>
     <a href="#">Services</a>
-    <a href="#">pricing</a>
-    <a href="#">Team</a>
-    <a href="#">Contact</a>
+    <a href="bookform.html">Booking</a>
+    <a href=".title-underline center">Team</a>
+    <a href="#form">Contact</a>
   </div>
   
   <div id="main">
@@ -100,6 +101,10 @@
 <div class="alignRow">
   <div class="imageColumn1">
   <img src="chef3.jpeg" alt="Snow" style="width:100%" height="100%">
+  
+</div>
+  
+  </div>
   </div>
   <div class="imageColumn2">
   <img src="chef1.jpeg" alt="Forest" style="width:100%">
@@ -116,24 +121,105 @@
     <div class="header">
       <p>top chefs.</p>
       <h1>...</h1>
+      <p>Other events</p>
     </div> 
+    
     </div>
   </section>
-  <div class="card-container">
-    <div class="float-layout">
-      <div class="card-image">
-        <img src="res.jpeg">
-        
-        <div class="card">
-          <div class="card-title">Where it all started</div>
-          <div class="card-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
-            mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
-            vel commodo consequat.
+  <div class="mySlides fade">
+
+    <img src="images/gal7.webp" style="width:70%" height="500px">
+    <div class="text">weddings</div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="wp1874157-restaurant-wallpapers.jpg" style="width:70%" height="500px">
+    <div class="text">couple dates</div>
+  </div>
+  
+  <div class="mySlides fade">
+  
+    <img src="images/gal6.webp" style="width:70%" height="500px">
+    <div class="text"></div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+     
+    <div class="row">
+      <div class="column">
+  <form class="form" id="form">
+    <h2>CONTACT US</h2>
+    <div class="column">
+    <form action="/action_page.php">
+      <label for="fname">First Name :</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname">Email:</label>
+      <input type="text" id="Email" name="lastname" placeholder="...@gmail.com">
+     
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+    <button>Send Message</button>
+    <div>
+    <br>
+      <span class="fa fa-phone"></span>001 1023 567<br>
+      <span class="fa fa-envelope-o"></span> Flavoursome@gmail.com
+    </div>
+    <div class="frame">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0684538735227!2d28.037676715512628!3d-26.19445138344218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1f2fd4755b%3A0x9684893c8f913cec!2sBraamfontein%20Gate!5e0!3m2!1sen!2sza!4v1615287912083!5m2!1sen!2sza" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </form>
+
+  
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+
+
+  
+<div class="footer-basic">
+  <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">Company Name © 2018</p>
+  </footer>
 </body>
 </html>
