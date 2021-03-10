@@ -221,6 +221,7 @@ hr:after {
   text-align: center;
   transition: all 0.2s;
   width: 20%;
+  border: 1px solid yellow;
 }
 .button:hover {
   background-color: #f7f7ef;
@@ -244,6 +245,7 @@ hr:after {
   transition: all 0.2s;
   width: auto;
   padding: 19px 95px;
+  border: 1px solid yellow;
 }
 .button1:hover {
   background-color: #f7f7ef;
@@ -317,16 +319,11 @@ h5 {
 .title-underline {
   padding: 20px 134px;
   color: #f1d21f;
-  height: 21px;
-}
-.title-underline span {
-  width: 105px;
-  height: 2px;
-  background: currentColor;
-  display: inline-block;
-  vertical-align: top;
+  height: 35px;
   position: relative;
+  top: -88px;
 }
+
 .title-underline span:before,
 .title-underline span:after {
   width: 4px;
@@ -412,17 +409,23 @@ img {
   font-size: 27px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .input {
+  position: relative;
+  display: block;
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  font-family: "Montserrat", sans-serif;
-  transition: all 0.3s;
-  border-bottom: 2px solid #bebed2;
+  background: black;
+  border-radius: 31px;
+  color: #fff9f9;
+  line-height: 1.2;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: none;
 }
 input:focus {
   border-bottom: 2px solid #78788c;
@@ -437,7 +440,7 @@ p:before {
 button {
   float: center;
   padding: 8px 12px;
-  margin: 8px 0 0;
+  margin: 8px 37px 0;
   font-family: "Montserrat", sans-serif;
   border: 2px solid #78788c;
   background: 0;
@@ -449,21 +452,12 @@ button:hover {
   background: #78788c;
   color: #fff;
 }
-.form {
-  position: absolute;
-  bottom: -2600px;
-  box-sizing: border-box;
-  background: #050505;
-  color: rgb(235, 202, 17);
-  width: 100%;
-  padding: 16px 4px 16px 0;
-  border-radius: 6px;
-  font-size: 15px;
-  box-shadow: 10px 10px 40px -14px #000;
-}
+
 .text {
   font-size: 20px;
   color: #a1941d;
+  top: 20px;
+  text-align: center;
 }
 .frame {
   float: right;
@@ -471,8 +465,7 @@ button:hover {
   bottom: 30px;
 }
 
-input[type="text"],
-select,
+input[type="text"] select,
 textarea {
   width: 100%;
   padding: 12px;
@@ -507,62 +500,457 @@ textarea {
     margin-top: 0;
   }
 }
-.footer-basic {
-  padding: 40px 0;
-  background-color: #ffffff;
-  color: #4b4c4d;
+
+.footer-distributed {
+  background: rgb(3, 3, 3);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
 }
 
-.footer-basic ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-.footer-basic li {
-  padding: 0 10px;
-}
-
-.footer-basic ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity: 1;
-}
-
-.footer-basic .social {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.footer-basic .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
   display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
   color: inherit;
-  opacity: 0.75;
 }
 
-.footer-basic .social > a:hover {
-  opacity: 0.9;
+.footer-distributed .footer-company-name {
+  color: rgb(228, 210, 210);
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
 }
 
-.footer-basic .copyright {
-  margin-top: 15px;
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #f0d600;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
   text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #f0d600;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: rgb(228, 243, 18);
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: rgb(207, 164, 23);
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #f0d600;
   font-size: 13px;
-  color: #aaa;
-  margin-bottom: 0;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 25px;
+
+  font-size: 20px;
+  color: #f8d50f;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+/* contact form*/
+
+/*---------------------------------------------*/
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  font-family: Helvetica Neue, "Montserrat", sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #bdbdd3;
+}
+input:-moz-placeholder {
+  color: #bdbdd3;
+}
+input::-moz-placeholder {
+  color: #bdbdd3;
+}
+input:-ms-input-placeholder {
+  color: #bdbdd3;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #bdbdd3;
+}
+textarea:-moz-placeholder {
+  color: #bdbdd3;
+}
+textarea::-moz-placeholder {
+  color: #bdbdd3;
+}
+textarea:-ms-input-placeholder {
+  color: #bdbdd3;
+}
+
+/*==================================================================
+[ Contact - Area]*/
+
+.con-contact {
+  width: 100%;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: transparent;
+}
+
+#wrap-contact {
+  width: 700px;
+  background: transparent;
+  border: 1px solid #b3b3b3;
+  padding: 40px 0px 20px 0px;
+}
+
+.wrap-contact-image {
+  width: 600px;
+  background: transparent;
+  padding: 40px 0px 20px 0px;
+}
+
+/*==================================================================
+[ Contact - Form ]*/
+
+.contact-form {
+  width: 100%;
+}
+
+.error {
+  padding: 5px 9px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+}
+
+.success {
+  padding: 5px 9px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 3px;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input {
+  width: 90%;
+  background-color: black;
+  border: 1px solid #000000;
+  border-radius: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: black;
+  border-radius: 31px;
+  color: black;
+  line-height: 1.2;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: none;
+}
+
+/*---------------------------------------------*/
+
+input.input {
+  height: 62px;
+  padding: 0 15px 0 15px;
+}
+
+textarea.input {
+  min-height: 169px;
+  padding: 19px 15px 0 15px;
+}
+
+/*------------------------------------------------------------------
+[ Focus Input ]*/
+
+.focus-input {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #fff;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input:focus + .focus-input100 {
+  width: calc(100% + 20px);
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.cont-contact-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.contact-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 250px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 7px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 7px;
+  background-color: #080808;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-form-btn:hover:before {
+  background-color: #7e730f;
+}
+
+.validate-input {
+  position: relative;
+}
+
+/*==================================================================
+[ Info Grid]*/
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+section#post-28 {
+  padding-top: 155px;
+}
+
+button {
+  float: center;
+  padding: 8px 12px;
+  margin: 8px 37px 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #ffbf00;
+  background: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
 }

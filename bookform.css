@@ -26,10 +26,10 @@ label {
 input,
 select,
 textarea {
-  border-radius: 40px;
+  border-radius: 19px;
   border: 2px solid #f2bebe;
   box-sizing: border-box;
-  font-size: 1.2em;
+  font-size: -0.8em;
   font-family: "Raleway", sans-serif;
   width: 100%;
   padding: 10px;
@@ -68,27 +68,27 @@ button:hover {
     url("spices-black-background-space-text\(1\)-min\(1\).jpg");
   width: 100%;
   min-height: 700px;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100%;
+  border-radius: 12px;
 }
 
 .bg-text {
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
   position: absolute;
-  top: 40%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 19%;
-  padding: 20px;
+  z-index: 1;
+  width: 49%;
+  padding: 3px;
   text-align: center;
   font-family: cursive;
+  border-radius: 131px;
 }
