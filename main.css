@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: rgb(43, 41, 41);
 }
 * {
@@ -147,7 +147,7 @@ body {
 
 .h3 {
   color: #f1d21f;
-  font-family: "Open Sans", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -314,6 +314,7 @@ h5 {
   color: #f1d21f;
   font-size: 50px;
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .title-underline {
@@ -348,6 +349,7 @@ h5 {
   color: #f1d21f;
   font-size: 32px;
   border-radius: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Caption text */
@@ -454,10 +456,11 @@ button:hover {
 }
 
 .text {
-  font-size: 20px;
+  font-size: 32px;
   color: #a1941d;
   top: 20px;
   text-align: center;
+  padding: 15px;
 }
 .frame {
   float: right;
@@ -799,7 +802,7 @@ textarea:-ms-input-placeholder {
   width: 100%;
   background: black;
   border-radius: 31px;
-  color: black;
+  color: white;
   line-height: 1.2;
   font-family: "Montserrat";
   font-size: 12px;
@@ -953,4 +956,11 @@ button {
   color: #5a5a6e;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.con {
+  text-align: center;
+  color: #a1941d;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
 }
